@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*esto es el color de arriba de todo de la página*/
+header{
+    display: flex;
+    min-height: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.582);
+
+}
+/*esta es la seccion sobre nosotros*/
+h1{
+    height: 200px;
+    display: flex;
+    min-height: 20vh;
+    color: hsla(0, 0%, 99%, 0.993);
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;  
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+h2{
+    display: flex;
+    min-height: 5vh;
+    color: hsla(0, 0%, 0%, 0.993);
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;  
+    text-shadow: 1px 1px 10px rgb(255, 250, 250);
+}
+p{
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.textodestacado{
+    color: red;
+}
+.textoconceptos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.logo-img{
+    width: 100px;
+    margin-right: 10px;
+}
+/*estilo lista de navegación*/
+.Listadenavegacion{
+    list-style: none;
+}
+.linknav{
+    /*background-color:hsla(0, 89%, 57%, 0.993);*/
+    text-decoration: none;
+    color: rgb(255, 247, 247);
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav ul li{
+    display: inline-block;
+}
+/* pseudoclases */
+.linknav:hover{
+    background-color:  rgb(235, 49, 49);
+    box-shadow: 2px 10px 39px 1px rgba(240,10,10,1);
+    -webkit-box-shadow: 2px 10px 39px 1px rgba(240,10,10,1);
+    -moz-box-shadow: 2px 10px 39px 1px rgba(240,10,10,1);
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 8px 0px;
+    }
+}
+/*esto es el color del medio de la página*/
+body{
+    background-color: whitesmoke;
+}
+/*esto es el color de abajo de la página*/
+footer{
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+}
+.linkredes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.linkredes a{
+    color: black;
+    font-size: 50px;
+    text-decoration: none;
+}
+.negrita{
+    font-weight: bold;
+}
+/*estilos centrados de texto*/
+.textocentrado{
+    text-align: center;
+}
+
+.textoderecha{
+    text-align: center;
+}
+/*imagen de fondo de cada pagina*/
+.dibuinicio{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/dibu-byn.jpg); height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+/*imagen de fondo productos*/
+.terstegen{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/terstegen-byn.jpg); height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+/*imagen de fondo escuela*/
+.armaniimgfond{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/armani-byn.jpg); height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+/*imagen de fondo servicios*/
+.pickford-byn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/pickford-byn.jpg); height: 400px;
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+/*imagen de fondo contacto*/
+.img-casillas{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/iker-casillas-byn.jpg); height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+.card-title{
+    color:  hsla(0, 72%, 46%, 0.993);
+}
+#ubicacionesescuelas iframe{
+    width: 100%;
+    height: 300px;
+}
+.videoatajadas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.formulariocontacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.nuestrostaff{
+    padding-left: 80px;
+}
+.carousel-item{
+    padding: 80px;
+}
+.escuelagaleriaubicaciones{
+    padding: 80px;
+}
