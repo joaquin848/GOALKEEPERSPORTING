@@ -228,6 +228,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 7px;
     color:  hsla(0, 72%, 46%, 0.993);
 }
