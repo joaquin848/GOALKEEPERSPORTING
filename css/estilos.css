@@ -224,3 +224,10 @@ footer{
 .escuelagaleriaubicaciones{
     padding: 80px;
 }
+.formulariotitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    color:  hsla(0, 72%, 46%, 0.993);
+}
