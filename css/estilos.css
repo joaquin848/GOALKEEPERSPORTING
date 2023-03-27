@@ -132,6 +132,7 @@ footer{
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
     -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
     -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
