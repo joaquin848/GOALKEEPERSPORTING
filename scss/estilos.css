@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); /*creación de variables*/
+/*creacion de maps*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10px;
+  background-image: linear-gradient(to right top, #464646, #656565, #868686, #a9a9a9, #cdcdcd, #cdcdcd, #cdcdcd, #cdcdcd, #a9a9a9, #868686, #656565, #464646);
+}
+header .logo {
+  display: flex;
+}
+header .logo-img {
+  width: 150px;
+  margin-right: 30px;
+}
+header .Listadenavegacion {
+  list-style: none;
+}
+header .Listadenavegacion li {
+  display: inline-block;
+}
+header .Listadenavegacion li .linknav {
+  text-decoration: none;
+  color: rgb(255, 247, 247);
+  font-weight: 600;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+header .Listadenavegacion li .linknav:hover {
+  background-color: rgb(235, 49, 49);
+  box-shadow: 2px 10px 39px 1px rgb(240, 10, 10);
+  -webkit-box-shadow: 2px 10px 39px 1px rgb(240, 10, 10);
+  -moz-box-shadow: 2px 10px 39px 1px rgb(240, 10, 10);
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav nav a {
+    display: block;
+    padding: 10px;
+  }
+}
+h1 {
+  height: 200px;
+  display: flex;
+  min-height: 20vh;
+  color: hsla(0, 0%, 99%, 0.993);
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+h2 {
+  display: flex;
+  min-height: 5vh;
+  color: hsla(0, 0%, 0%, 0.993);
+  padding: 10px;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgb(255, 250, 250);
+}
+
+p {
+  padding: 3%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.textodestacado {
+  color: rgb(211, 39, 39);
+}
+
+.textoconceptos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*imagen de fondo de cada pagina*/
+.dibuinicio, .img-casillas, .pickford-byn, .armaniimgfond, .terstegen {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url(../assets/img/dibu-byn.jpg);
+  height: 400px;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 61px 1px 79px -15px rgb(0, 0, 0) inset;
+  -webkit-box-shadow: 61px 1px 79px -15px rgb(0, 0, 0) inset;
+  -moz-box-shadow: 61px 1px 79px -15px rgb(0, 0, 0) inset;
+}
+
+/*imagen de fondo productos*/
+.terstegen {
+  background-image: url(../assets/img/terstegen-byn.jpg);
+  height: 400px;
+}
+
+/*imagen de fondo escuela*/
+.armaniimgfond {
+  background-image: url(../assets/img/armani-byn.jpg);
+  height: 400px;
+}
+
+/*imagen de fondo servicios*/
+.pickford-byn {
+  background-image: url(../assets/img/pickford-byn.jpg);
+  height: 400px;
+}
+
+/*imagen de fondo contacto*/
+.img-casillas {
+  background-image: url(../assets/img/iker-casillas-byn.jpg);
+  height: 400px;
+}
+
+.card-title {
+  color: hsla(0, 72%, 46%, 0.993);
+}
+
+.videoatajadas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.formulariocontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.nuestrostaff {
+  padding-left: 5px;
+}
+
+.carousel-item {
+  padding: 5px;
+}
+
+.formulariotitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: hsla(0, 79%, 43%, 0.993);
+}
+
+/*esto es el color del medio de la página*/
+body {
+  background-color: whitesmoke;
+}
+
+/*esto es el color de abajo de la página*/
+footer {
+  background-image: linear-gradient(to left bottom, #444343, #636262, #858282, #a8a5a5, #ccc8c8, #ccc8c8, #ccc8c8, #ccc8c8, #a8a5a5, #858282, #636262, #444343);
+  color: white;
+}
+
+.linkredes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.linkredes a {
+  color: rgb(7, 7, 7);
+  font-size: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.linkredes a:hover {
+  transform: translateY(-10px);
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+h3 {
+  color: #111111;
+}/*# sourceMappingURL=estilos.css.map */

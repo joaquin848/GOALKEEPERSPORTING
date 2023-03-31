@@ -1,0 +1,26 @@
+/*esto es el color de abajo de la página*/
+footer{
+    background-image: linear-gradient(to left bottom, #444343, #636262, #858282, #a8a5a5, #ccc8c8, #ccc8c8, #ccc8c8, #ccc8c8, #a8a5a5, #858282, #636262, #444343);
+    color: white;
+}
+.linkredes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.linkredes a{
+    color: rgb(7, 7, 7);
+    font-size: 50px;
+    text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+	display: inline-block;
+}
+.linkredes a:hover{
+    transform: translateY(-10px);
+}
+.negrita{
+    font-weight: bold;
+}
+h3{
+    color: #111111;
+}

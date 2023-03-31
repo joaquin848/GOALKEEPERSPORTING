@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="¡Entrenamientos de arqueros en GOALKEEPERSPORTING!.¡Conoce más!">
+        <meta name="keywords" content="arqueros, fútbol, entrenadores"> 
         <title>GOALKEEPER SPORTING</title>
          <!--boostrap-->
          <link href="./css/bootstrap.min.css" rel="stylesheet">
          <!--favicon arquero--> 
          <link rel="shortcut icon" href="./goalkeeper.favicon.png" type="image/x-icon">
          <!--estilos-->
-         <link rel="stylesheet" href="./css/estilos.css">
+         <link rel="stylesheet" href="./scss/estilos.css">
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
          <!--estilos iconos-->
          <script src="https://kit.fontawesome.com/c309d10d83.js" crossorigin="anonymous"></script>
     </head>
@@ -47,11 +50,11 @@
                     <h1> QUIENES SOMOS?</h1>
             </div>
             <section>
-                <p class="parrafo px-md-5 fs-5"><span class="textodestacado">Somos el primer centro de entrenamiento de arqueros creado en el partido de Malvinas Argentinas</span>. Encabezado por Joaquín Maciel, un equipo de profesionales trabaja día a día con chicos y adultos profesionales y amateurs, desarrollando al máximo todas sus capacidades y preparándolos para la competencia. 
+                <p class="parrafo px-md-5 fs-5" data-aos="fade-right"><span class="textodestacado">Somos el primer centro de entrenamiento de arqueros creado en el partido de Malvinas Argentinas</span>. Encabezado por Joaquín Maciel, un equipo de profesionales trabaja día a día con chicos y adultos profesionales y amateurs, desarrollando al máximo todas sus capacidades y preparándolos para la competencia. 
                 </p> 
-                <p class="parrafo px-md-5 fs-5"> Nuestra propuesta es abordar el entrenamiento del arquero de una manera específica, insistiendo en la integración de todos los conceptos técnicos, tácticos y estratégicos, sin olvidarse de un aspecto tan importante como la preparación física que el puesto requiere.
+                <p class="parrafo px-md-5 fs-5" data-aos="fade-left"> Nuestra propuesta es abordar el entrenamiento del arquero de una manera específica, insistiendo en la integración de todos los conceptos técnicos, tácticos y estratégicos, sin olvidarse de un aspecto tan importante como la preparación física que el puesto requiere.
                 </p> 
-                <p class="parrafo px-md-5 text-center fs-5">
+                <p class="parrafo px-md-5 text-center fs-5" data-aos="fade-up">
                         <span class="textodestacado">Conceptos que se abordan</span>
                         <br>
                         <br>Funciones del puesto                      
@@ -63,26 +66,26 @@
                 </p>
             </section>
             <section>
-            <h2>Cuales Son Nuestras Ideas?</h2>
-            <p class="parrafo px-md-5 fs-5">
-               <span class="textodestacado">Un arquero debe estar bien formado técnica y físicamente;</span> demostrar conocimiento táctico, capacidad de liderazgo y fortaleza psicológica. En el CEAF trabajamos todos estos aspectos para formar íntegramente a quienes tienen la responsabilidad de cuidar el arco.
+            <h2 data-aos="fade-down-right">Cuales Son Nuestras Ideas?</h2>
+            <p class="parrafo px-md-5 fs-5" data-aos="fade-up-right">
+               <span class="textodestacado">Un arquero debe estar bien formado técnica y físicamente;</span> demostrar conocimiento táctico, capacidad de liderazgo y fortaleza psicológica. En Nuestras instalaciones trabajamos todos estos aspectos para formar íntegramente a quienes tienen la responsabilidad de cuidar el arco.
             </p>
-             <p class="parrafo px-md-5 fs-5">
+             <p class="parrafo px-md-5 fs-5" data-aos="fade-up-left">
                 <span class="textodestacado">Formación integral:</span>
                 Desarrollamos arqueros que estén preparados para todas las situaciones que puede presentar un partido</p>
-             <p class="parrafo px-md-5 fs-5">
+             <p class="parrafo px-md-5 fs-5" data-aos="fade-up-right">
                 <span class="textodestacado">Siempre se puede mejorar:</span>
                 Sacamos lo mejor de cada arquero en particular, para que crezca dentro de su nivel</p>
             </section>
             <section class="container">
             <div class="row">
-            <h2 class= nuestrostaff>Nuestro Staff</h2>
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <h2 class= nuestrostaff data-aos="zoom-in-right">Nuestro Staff</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <p class="parrafo px-md-5 fs-5">
                 Ellos son Nuestros entrenadores y te acompañarán a ti durante tu estadía en algunas de nuestras escuelas.<span class="textodestacado">Son un grupo de profesionales altamente capacitados para el entrenamiento tanto psicológico como fisico que necesita un arquero</span>. Todos nuestros entrenadores están a su disposición para poder ayudarlo.
             </p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-8">
+            <div class="col-sm-12 col-md-6 col-lg-8" data-aos="flip-right">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -127,5 +130,9 @@
             </div> 
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

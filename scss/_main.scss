@@ -1,0 +1,99 @@
+h1{
+    height: 200px;
+    display: map-get($map-flex,flexible);
+    min-height: 20vh;
+    color: hsla(0, 0%, 99%, 0.993);
+    align-items: center;
+    font-weight: bold;  
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+h2{
+    display: map-get($map-flex,flexible);
+    min-height: 5vh;
+    color: hsla(0, 0%, 0%, 0.993);
+    padding: $espaciado-estandar;
+    align-items: map-get($map-flex,centrado);
+    font-weight: bold;  
+    text-shadow: 1px 1px 10px rgb(255, 250, 250);
+}
+p{
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.textodestacado{
+    color: $texto-destacado;
+}
+.textoconceptos{
+    display: map-get($map-flex,flexible);
+    justify-content: map-get($map-flex,centrado);
+    align-items: map-get($map-flex,centrado);
+}
+/*imagen de fondo de cada pagina*/
+.dibuinicio{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    background-image: url(../assets/img/dibu-byn.jpg); height: 400px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 61px 1px 79px -15px rgba(0,0,0,1) inset;
+}
+/*imagen de fondo productos*/
+.terstegen{
+    @extend .dibuinicio;
+    background-image: url(../assets/img/terstegen-byn.jpg); height: 400px;
+}
+/*imagen de fondo escuela*/
+.armaniimgfond{
+    @extend .dibuinicio;
+    background-image: url(../assets/img/armani-byn.jpg); height: 400px;
+}
+/*imagen de fondo servicios*/
+.pickford-byn{
+    @extend .dibuinicio;
+    background-image: url(../assets/img/pickford-byn.jpg); height: 400px;
+}
+/*imagen de fondo contacto*/
+.img-casillas{
+    @extend .dibuinicio;
+    background-image: url(../assets/img/iker-casillas-byn.jpg); height: 400px;
+}
+.card-title{
+    color:  hsla(0, 72%, 46%, 0.993);
+}
+.videoatajadas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $espaciado-grande;
+}
+.formulariocontacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $espaciado-grande;
+}
+.nuestrostaff{
+    padding-left: 5px;
+}
+.carousel-item{
+    padding: 5px;
+}
+.formulariotitle{
+    display: map-get($map-flex,flexible);
+    align-items: map-get($map-flex,centrado);
+    justify-content: map-get($map-flex,centrado);
+    padding: $espaciado-estandar;
+    color:  hsla(0, 79%, 43%, 0.993);
+}

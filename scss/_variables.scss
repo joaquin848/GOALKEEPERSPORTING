@@ -1,0 +1,14 @@
+/*creación de variables*/
+$color-primario : rgba(0, 0, 0, 0.582);
+$color-body : whitesmoke;
+$texto-destacado : rgb(211, 39, 39);
+
+$espaciado-estandar: 10px;
+$espaciado-doble: 20px;
+$espaciado-grande: 80px;
+/*creacion de maps*/
+$map-flex:(
+    flexible: flex,
+    espacio-entre: space-between,
+    centrado: center,
+);
