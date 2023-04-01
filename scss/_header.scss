@@ -1,7 +1,7 @@
 header{
     @include flexible(column,space-between,center,);
     min-height: 10px;
-    background-image: linear-gradient(to right top, #464646, #656565, #868686, #a9a9a9, #cdcdcd, #cdcdcd, #cdcdcd, #cdcdcd, #a9a9a9, #868686, #656565, #464646);
+    background-image: linear-gradient(to right top, #464444, #484646, #494747, #4b4949, #4d4b4b, #5a5757, #676363, #757070, #938c8c, #b1a9a9, #d1c7c7, #f2e6e6);
     .logo{
         display: flex;
     }

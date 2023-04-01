@@ -52,17 +52,17 @@ p{
 /*imagen de fondo productos*/
 .terstegen{
     @extend .dibuinicio;
-    background-image: url(../assets/img/terstegen-byn.jpg); height: 400px;
+    background-image: url(../assets/img/terstegen-byn.jpg); height: 400px
 }
 /*imagen de fondo escuela*/
 .armaniimgfond{
     @extend .dibuinicio;
-    background-image: url(../assets/img/armani-byn.jpg); height: 400px;
+    background-image: url(../assets/img/armani-byn.jpg); height: 400px
 }
 /*imagen de fondo servicios*/
 .pickford-byn{
     @extend .dibuinicio;
-    background-image: url(../assets/img/pickford-byn.jpg); height: 400px;
+    background-image: url(../assets/img/pickford-byn.jpg); height: 400px
 }
 /*imagen de fondo contacto*/
 .img-casillas{
@@ -96,4 +96,10 @@ p{
     justify-content: map-get($map-flex,centrado);
     padding: $espaciado-estandar;
     color:  hsla(0, 79%, 43%, 0.993);
+}
+
+@media screen and (max-width: 600px) {
+    .dibuinicio{
+        background-image: linear-gradient(to right top, #c72a2a, #c92c2c, #cc2e2e, #ce3030, #d03232, #c73737, #be3c3c, #b54040, #9e4646, #864a4a, #6d4c4c, #514d4d); height: 200px;
+    }
 }
