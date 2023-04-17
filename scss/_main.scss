@@ -2,6 +2,7 @@ h1{
     height: 200px;
     display: map-get($map-flex,flexible);
     min-height: 20vh;
+    padding: 3%;
     color: hsla(0, 0%, 99%, 0.993);
     align-items: center;
     font-weight: bold;  
@@ -13,8 +14,7 @@ h2{
     color: hsla(0, 0%, 0%, 0.993);
     padding: $espaciado-estandar;
     align-items: map-get($map-flex,centrado);
-    font-weight: bold;  
-    text-shadow: 1px 1px 10px rgb(255, 250, 250);
+    font-weight: bold;
 }
 p{
     padding: 3%;
@@ -34,13 +34,14 @@ p{
     justify-content: map-get($map-flex,centrado);
     align-items: map-get($map-flex,centrado);
 }
+
 /*imagen de fondo de cada pagina*/
 .dibuinicio{
     display: flex;
     justify-content: start;
     align-items: center;
     object-fit: cover;
-    background-image: url(../assets/img/dibu-byn.jpg); height: 400px;
+    background-image: url(../assets/img/portada.index.jpg); height: 400px;
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
@@ -52,7 +53,7 @@ p{
 /*imagen de fondo productos*/
 .terstegen{
     @extend .dibuinicio;
-    background-image: url(../assets/img/terstegen-byn.jpg); height: 400px
+    background-image: url(../assets/img/portada.productos.jpg); height: 400px
 }
 /*imagen de fondo escuela*/
 .armaniimgfond{
@@ -69,8 +70,35 @@ p{
     @extend .dibuinicio;
     background-image: url(../assets/img/iker-casillas-byn.jpg); height: 400px;
 }
+/*productos*/
 .card-title{
     color:  hsla(0, 72%, 46%, 0.993);
+    text-align: justify;
+}
+.tarjetaProductoHijo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
+.tarjetaProductoPadre:hover .tarjetaProductoHijo {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+}
+.tarjetaProductoPadre:hover .card-img-top {
+    opacity: 0.5;
+    transition: opacity 0.1s ease; 
+} 
+.card-img-top {
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    height: 500px;
+}
+.card-body{
+    height: 280px;
+}
+.card-text{
+    text-align: center;
 }
 .videoatajadas{
     display: flex;
@@ -83,6 +111,41 @@ p{
     align-items: center;
     justify-content: center;
     padding: $espaciado-grande;
+}
+/*pagina 404*/
+.pagina404{
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.parrafo404{
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.containerpagina404{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+.buttonpagina404{
+    background-color: #e21616;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+.buttonpagina404:hover {
+    background-color: #f57575;
 }
 .nuestrostaff{
     padding-left: 5px;
@@ -97,9 +160,40 @@ p{
     padding: $espaciado-estandar;
     color:  hsla(0, 79%, 43%, 0.993);
 }
-
-@media screen and (max-width: 600px) {
+/* Media Querys */
+@media screen and (max-width: 1024px) {
     .dibuinicio{
-        background-image: linear-gradient(to right top, #c72a2a, #c92c2c, #cc2e2e, #ce3030, #d03232, #c73737, #be3c3c, #b54040, #9e4646, #864a4a, #6d4c4c, #514d4d); height: 200px;
+        background-image: url(../assets/img/dibu.1024px.jpg); 
+        }
+        .terstegen{
+        background-image: url(../assets/img/terstegen.1024px.jpg);
+        }
+        .armaniimgfond{
+            background-image: url(../assets/img/armani.1024px.jpg);
+        }
+        .pickford-byn{
+            background-image: url(../assets/img/pickford.1024px.jpg);
+        }
+        .img-casillas{
+            background-image: url(../assets/img/casillas.1024px.jpg);
+        }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dibuinicio{
+    background-image: url(../assets/img/dibu.600px.jpg); 
     }
-}
+    .terstegen{
+    background-image: url(../assets/img/guantes.600px.jpg);
+    }
+    .armaniimgfond{
+        background-image: url(../assets/img/allison.600px.jpg);
+    }
+    .pickford-byn{
+        background-image: url(../assets/img/kepa.600px.jpg);
+    }
+    .img-casillas{
+        background-image: url(../assets/img/ter.stegen_600px.jpg);
+    }
+  }
+ 
